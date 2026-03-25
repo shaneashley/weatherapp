@@ -1,12 +1,12 @@
 const CurrentWeather = ({ currentWeather }) => {
     return (
-        <div className="weather-content">
-    {/* ... other weather details ... */}
-    <div className="weather-icon">
-      <img src={iconUrl} alt="Weather Icon" />
-    </div>
-    {/* ... other weather details ... */}
-  </div>
+      <div className="current-weather">
+        <img src={`icons/${currentWeather.weatherIcon}.svg`} className="weather-icon" />
+        <h2 className="temperature">
+          {currentWeather.temperature} <span>°C</span>
+        </h2>
+        <p className="description">{currentWeather.description}</p>
+      </div> 
     );
   };
   export default CurrentWeather;
