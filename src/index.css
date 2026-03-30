@@ -21,7 +21,7 @@ body {
   z-index: 1;
   overflow: hidden;
   max-width: 410px;
-  background: pink;
+  background: #fff;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 .container::after {
